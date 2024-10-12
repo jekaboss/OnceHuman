@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<title>OnceHuman</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<div class="logo">
+						<a href="#"><img src="img/logo.jpg" width="50" alt="Image"></a>
+					</div>
+					<nav class="navbar">
+						<a href="#">торговая <br> плошятка</a>
+						<a href="#">Мої <br> оголошення</a>
+						<a href="#">На каву</a>
+					</nav>
+					<div class="search-bar">
+						<input type="text" placeholder="Пошук...">
+						<button onclick="search()">Пошук</button>
+					</div>
+					<div class="add-post">
+						<a href="#">Додати оголошення</a>
+					</div>
+					<div class="auth-buttons">
+						<button onclick="openLogin()">Вхід</button>
+						<button onclick="openRegister()">Реєстрація</button>
+					</div>
+				</div>
+				<!-- Модальні вікна для входу/реєстрації -->
+				<div id="loginModal" class="modal">
+					<div class="modal-content">
+						<span class="close" onclick="closeLogin()">&times;</span>
+						<h2>Вхід</h2>
+						<form>
+							<input type="email" placeholder="Email" required>
+							<input type="password" placeholder="Пароль" required>
+							<button type="submit">Увійти</button>
+						</form>
+					</div>
+				</div>
+				
+				<div id="registerModal" class="modal">
+					<div class="modal-content">
+						<span class="close" onclick="closeRegister()">&times;</span>
+						<h2>Реєстрація</h2>
+						<form>
+							<input type="email" placeholder="Email" required>
+							<input type="password" placeholder="Пароль" required>
+							<button type="submit">Зареєструватися</button>
+						</form>
+					</div>
+				</div>
+			</header>
+			<main class="main__container">
+				<div class="main__p">
+					<p>
+						Торговля предметами. Зарабатывайте золото.
+						Купите себе лучшее снаряжение. Расширьте
+						свои возможности в Diablo с помощью Diablo.trade
+					</p>
+				</div>
+				<div class="main__h2">
+					<h2>Торговая площадка</h2>
+					<div class="main__main">
+						<div class="add-post main">
+							<a href="#">предмети</a>
+						</div>
+						<div class="add-post main">
+							<a href="#">услуги</a>
+						</div>
+					</div>
+				</div>
+				<div class="main__h2-p">
+					<h2>
+						Торговое сообщество Diablo 4
+					</h2>
+					<p>
+						В Diablo.trade мы верим, что суть опыта Diablo 4
+						заключается в связях, которые мы формируем, приключениях,
+						в которые мы отправляемся вместе, и волнении от торговли в темном,
+						зловещем мире Санктуария. Мы приглашаем вас стать частью нашего
+						страстного сообщества и открыть для себя мир преимуществ и товарищества.
+					</p>
+				</div>
+				<div class="main__blok">
+					<div class="main__blok-1">
+						<div class="main__blok-blok">
+							<h3>Замечательные люди и чат сообщества</h3>
+							<p>
+								Наше сообщество построено на основе замечательных людей,
+								которые разделяют вашу страсть к Diablo 4. Участвуйте
+								в оживленных дискуссиях, делитесь своим опытом и заводите
+								новых друзей в нашем чате сообщества. Если вы ищете торговых
+								партнеров или просто хотите пообщаться с другими искателями
+								приключений, вы найдете здесь гостеприимное
+								и единомышленное сообщество.
+							</p>
+						</div>
+						<div class="main__blok-blok">
+							<h3>LFG для всех игровых действий</h3>
+							<p>
+								Нужна группа для сложного подземелья или группа для
+								дерзкого рейда? Не ищите дальше! Наше сообщество предлагает
+								платформу «Поиск группы» (LFG), где вы можете объединиться с
+								другими игроками для всех игровых активностей. Создавайте
+								альянсы, побеждайте врагов и максимизируйте свой игровой
+								опыт с помощью ваших товарищей по Diablo 4.
+							</p>
+						</div>
+					</div>
+					<div class="main__blok-2">
+						<div class="add-post">
+							<a href="#">присоединиця к дискору</a>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer__container">
+				<p class="footer">
+					DIABLO® IV — ТОРГОВАЯ МАРКА ИЛИ ЗАРЕГИСТРИРОВАННАЯ ТОРГОВАЯ
+					МАРКА BLIZZARD ENTERTAINMENT, INC. В США И/ИЛИ ДРУГИХ СТРАНАХ.
+					ДАННЫЙ ВЕБ-САЙТ НЕ ЯВЛЯЕТСЯ ОФИЦИАЛЬНЫМ ПРОДУКТОМ, НЕ СВЯЗАН
+					И НЕ ПОДДЕРЖИВАЕТСЯ BLIZZARD ENTERTAINMENT®.
+				</p>
+			</footer>
+		</div>
+		<!-- Підключення JS-файлу з кодом -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
